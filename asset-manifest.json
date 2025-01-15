@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/standup-kalil/static/css/main.fc39c89f.css",
+    "main.js": "/standup-kalil/static/js/main.c0cddb29.js",
+    "static/js/787.0315ab7d.chunk.js": "/standup-kalil/static/js/787.0315ab7d.chunk.js",
+    "index.html": "/standup-kalil/index.html",
+    "main.fc39c89f.css.map": "/standup-kalil/static/css/main.fc39c89f.css.map",
+    "main.c0cddb29.js.map": "/standup-kalil/static/js/main.c0cddb29.js.map",
+    "787.0315ab7d.chunk.js.map": "/standup-kalil/static/js/787.0315ab7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc39c89f.css",
+    "static/js/main.c0cddb29.js"
+  ]
+}
