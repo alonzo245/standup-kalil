@@ -1,7 +1,7 @@
 export const translationsConfig = {
   eng: {
     Main: 'Main',
-    'Alon Alush': 'Alon Alush',
+    'Chilli Comedy': 'Chilli Comedy',
     Shows: 'Shows',
     Videos: 'Videos',
     'Contact Me': 'Contact Me',
@@ -37,7 +37,7 @@ export const translationsConfig = {
   },
   heb: {
     Main: 'ראשי',
-    'Alon Alush': 'אלון אלוש',
+    'Chilli Comedy': 'הסטנדאפ הקליל',
     Shows: 'סוגי מופעים',
     Videos: 'סרטונים',
     'Contact Me': 'יצירת קשר',

@@ -13,11 +13,11 @@ const AboutMe: React.FC = () => {
 
   return (
     <Container id='about'>
-      <H2 theme={theme} text={translations['Alon Alush']}>
-        {translations['Alon Alush']}
+      <H2 theme={theme} text={translations['Chilli Comedy']}>
+        {translations['Chilli Comedy']}
       </H2>
       <Row>
-        <Img src={`${links.baseUrl}/images/img2.png`} alt={translations['Alon Alush']} />
+        <Img src={`${links.baseUrl}/images/img2.png`} alt={translations['Chilli Comedy']} />
         <Article>
           {translations['about-1'] && (
             <P dangerouslySetInnerHTML={{ __html: translations['about-1'] }} />

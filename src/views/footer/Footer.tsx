@@ -21,12 +21,10 @@ const Footer: React.FC = () => {
 
   return (
     <Container id='contact-me' theme={theme}>
-      <H5>{translations['Alon Alush']}</H5>
+      <H5>{translations['Chilli Comedy']}</H5>
       <P>
         <span>{translations['Contact Me']}</span> |{' '}
-        <StyledNavLink to={'/standup-kalil/pr'}>
-          {translations['Public relations']}
-        </StyledNavLink>
+        <StyledNavLink to={'/standup-kalil/pr'}>{translations['Public relations']}</StyledNavLink>
       </P>
       <Row>
         <Link data-tip data-for='github'>

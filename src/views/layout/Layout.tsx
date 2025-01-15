@@ -15,11 +15,11 @@ const Layout: React.FC<Props> = ({ children }) => {
 
   return (
     <Container theme={theme}>
-      <MobileContactLinks />
-      <Nav />
-      <ScrollToTop smooth color='#a20000' style={{ bottom: '70px' }} />
+      {/* <MobileContactLinks /> */}
+      {/* <Nav /> */}
+      {/* <ScrollToTop smooth color='#a20000' style={{ bottom: '70px' }} /> */}
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 };

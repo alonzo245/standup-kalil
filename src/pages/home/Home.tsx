@@ -2,18 +2,18 @@ import { FC, useRef } from 'react';
 import { useQuery } from 'react-query';
 import topology from '../../config/topology';
 import { useGlobalState } from '../../context/useGlobalState';
-import { AboutMe } from './aboutMe';
-import { ShowTypes } from './showTypes';
-import { GitHubRepos } from './projects';
+// import { AboutMe } from './aboutMe';
+// import { ShowTypes } from './showTypes';
+// import { GitHubRepos } from './projects';
 import { useScreenSize } from '../../hooks/useScreenSize';
 import { mobileThreshold } from '../../theme/theme.constants';
 import { Footer } from '../../views/footer';
 import { Header } from '../../views/header';
 import ComedySpecial from '../../components/ComedySpecial';
 import styled from '@emotion/styled';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useLocation } from 'react-router-dom';
-import MoreVideos from './aboutMe/MoreVideos';
+// import MoreVideos from './aboutMe/MoreVideos';
 
 const Home: FC = () => {
   const containerRef = useRef(null);
@@ -42,23 +42,7 @@ const Home: FC = () => {
     },
   );
 
-  return isLoading ? null : (
-    <div ref={containerRef}>
-      <Header />
-      {width < mobileThreshold && (
-        <div>
-          <Title>קטעים ממופע הסטנדאפ האישי</Title>
-          <ComedySpecial />
-        </div>
-      )}
-
-      <MoreVideos />
-      <AboutMe />
-      <ShowTypes />
-      {location.pathname === '/main' && width < mobileThreshold && <Footer />}
-      {location.pathname === '/main' && <GitHubRepos />}
-    </div>
-  );
+  return <img src='/images/1.jpg' alt='' />;
 };
 
 export default Home;

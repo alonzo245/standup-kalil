@@ -23,58 +23,7 @@ const Hero: React.FC = () => {
   const { width } = useScreenSize();
   const { locale, translations } = useLocalizationState();
 
-  return (
-    <Container theme={theme}>
-      <Row text={locale}>
-        <H1 theme={theme} text={translations['Alon Alush']}>
-          {translations['Alon Alush']}
-        </H1>
-        <P></P>
-        <div style={{ display: 'flex' }}>
-          <StyledAnchorLink href='#about' theme={theme}>
-            {translations['More Info']}
-          </StyledAnchorLink>
-          {/* <StyledAnchorLink href="#contact-me" theme={theme}> */}
-          <A
-            href='#'
-            onClick={() => {
-              window.document.location.href = WHATSAPP_LINK;
-            }}
-            theme={theme}
-            bgColor='#00D25D'
-            color='#ffffff'
-          >
-            {translations['WhatsApp']}
-          </A>
-        </div>
-
-        {width > mobileThreshold && <ComedySpecial />}
-      </Row>
-      <RowContact>
-        <Alon text={locale} />
-        <Img src={`${links.baseUrl}/images/alon.png`} text={locale} />
-
-        {/* <Link href={CV_LINK} data-tip data-for="cv">
-                    <StyledIoDocumentAttachOutline color={Colors.white} size={50} />
-                </Link>
-                <Link href={GITHUB_LINK} target="_blank" data-tip data-for="github">
-                    <span> {githubIcon(50)}</span>
-                </Link>
-                <Link href={LINKEDIN_LINK} target="_blank" data-tip data-for="linkedin">
-                    <span>{linkedinIcon(50)}</span>
-                </Link>
-                <ReactTooltip id="cv" place="bottom" effect="solid">
-                    My CV
-                </ReactTooltip>
-                <ReactTooltip id="linkedin" place="bottom" effect="solid">
-                    Linkedin Profile
-                </ReactTooltip>
-                <ReactTooltip id="github" place="bottom" effect="solid">
-                    GitHub Profile
-                </ReactTooltip> */}
-      </RowContact>
-    </Container>
-  );
+  return <Container theme={theme}></Container>;
 };
 
 export default Hero;

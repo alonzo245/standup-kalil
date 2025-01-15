@@ -30,9 +30,9 @@ const Pr: FC = () => {
     { url: `${links.baseUrl}/images/pr/0.png` },
   ];
 
-  const eng = `Alon Alush is a tech developer and a stand-up artist who talk about people, computers and the office that glue them all together`;
+  const eng = `Chilli Comedy is a tech developer and a stand-up artist who talk about people, computers and the office that glue them all together`;
 
-  const heb = `אלון אלוש סטנדאפיסט הייטקיסט שצוחק על ההייטק ועל כל מה שמחבר בין אנשים למחשבים במשרד.`;
+  const heb = `הסטנאפ הקליל שצוחק על ההייטק ועל כל מה שמחבר בין אנשים למחשבים במשרד.`;
 
   useEffect(() => {
     setTimeout(() => {

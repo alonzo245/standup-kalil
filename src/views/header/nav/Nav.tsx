@@ -37,11 +37,6 @@ const Nav: FC = () => {
   return (
     <Container show={open}>
       <LinksRow>
-        {/* <A href={""}>
-          <FaInstagramSquare size={30} color={iconsColor} />
-        </A> */}
-        <LocalFlagSwitcher />
-
         {width > mobileThreshold && (
           <>
             <A href={WHATSAPP_LINK} target='_blank'>
@@ -58,10 +53,6 @@ const Nav: FC = () => {
             </A>
           </>
         )}
-
-        <a href={'https://standup.alonalush.com'}>
-          <Logo src={`${links.baseUrl}/images/logo.png`} alt='Full-Stack Developer' />
-        </a>
       </LinksRow>
       <NavList show={open}>
         <li>
@@ -71,7 +62,7 @@ const Nav: FC = () => {
         </li>
         <li>
           <StyledAnchorLink href='/#about' onClick={() => setOpen(false)}>
-            {translations['Alon Alush']}
+            {translations['Chilli Comedy']}
           </StyledAnchorLink>
         </li>
         <li>
@@ -84,16 +75,6 @@ const Nav: FC = () => {
             {translations['Videos']}
           </StyledAnchorLink>
         </li>
-        {/* <li>
-          <StyledAnchorLink href="#contact-me" onClick={() => setOpen(false)}>
-            הזמינו מופע
-          </StyledAnchorLink>
-        </li> */}
-        {/* {width > mobileThreshold && (
-                    <li>
-                        <ThemeToggle />
-                    </li>
-                )} */}
       </NavList>
       {width < mobileThreshold && (
         <Span>

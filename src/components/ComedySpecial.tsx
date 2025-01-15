@@ -13,27 +13,6 @@ const ComedySpecial: React.FC = () => {
         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;'
         allowFullScreen={true}
       />
-
-      {/* <iframe
-        style={{ margin: "0 auto", border: "9px solid yellow" }}
-        width="260"
-        height="480"
-        src="https://www.youtube.com/embed/AhXRXg1YZMg?si=6Ohsblm9-PIw6DST&showinfo=0"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-        allowFullScreen={true}
-      /> */}
-      {/* <div
-      style={{
-        width: "80px",
-        height: "80px",
-        position: "absolute",
-        opacity: 0,
-        right: "0px",
-        top: "0px",
-        backgroundColor: "red",
-      }}
-    ></div> */}
     </IframeContainer>
   );
 };

@@ -35,7 +35,7 @@ textarea {
 body {
   font-family: 'Helvetica', sans-serif;
   direction: rtl;
-  background-color: black;
+  background-color: #0141ff;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -84,4 +84,22 @@ a {
 .ant-pagination .ant-pagination-prev,
 .ant-pagination .ant-pagination-item-link {
   background-color: unset !important;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.main-text {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-image {
+    width: 50%;
+  }
+  .main-text {
+    width: 50%;
+    width: 50%;
+  }
 }

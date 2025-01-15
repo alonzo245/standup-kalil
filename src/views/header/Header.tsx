@@ -8,13 +8,7 @@ const Header: React.FC = () => {
   const links = topology();
   const { theme } = useThemeState();
 
-  return (
-    <Container theme={theme} bgImage={`${links.baseUrl}/images/bg.jpg`}>
-      <Row>
-        <Hero />
-      </Row>
-    </Container>
-  );
+  return <Container theme={theme}></Container>;
 };
 
 export default Header;
@@ -27,12 +21,12 @@ const Row = styled.div`
   margin: 0 auto;
 `;
 
-const Container = styled.header<{ theme: ThemeType; bgImage: string }>`
+const Container = styled.header<{ theme: ThemeType; bgImage?: string }>`
   /* background-color: ${(p) => p.theme.heroBackground}; */
   height: 100vh;
   color: white;
   font-size: 40px;
-  background-image: url(${(p) => p.bgImage});
+  background-image: url(${(p) => p.bgImage || ''});
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: top center;
